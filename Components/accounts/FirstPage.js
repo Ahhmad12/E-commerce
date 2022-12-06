@@ -15,7 +15,7 @@ const FirstPage = ({ navigation }) => {
     <ViewStyle>
       <ImageBackground
         style={{ width: "100%", height: "100%" }}
-        source={require("../assets/pic3.jpg")}
+        source={require("../../assets/pic3.jpg")}
       >
         <ViewStyle1>
           <Title>New Fashion</Title>
