@@ -118,12 +118,12 @@ const Registeration = ({ navigation }) => {
             )}
           </InputStyle>
           <TouchableOpacity style={{ alignItems: "center", marginTop: 70 }}>
-            <Pressable onPress={() => navigation.navigate("Registration")}>
+            <Pressable onPress={() => navigation.navigate("")}>
               <ButtonGo> Login </ButtonGo>
             </Pressable>
           </TouchableOpacity>
           <TouchableOpacity style={{ alignItems: "center", marginTop: 10 }}>
-            <Pressable onPress={() => navigation.navigate("Registration")}>
+            <Pressable onPress={() => navigation.navigate("")}>
               <Text>Don't have any account? SignUp</Text>
             </Pressable>
           </TouchableOpacity>

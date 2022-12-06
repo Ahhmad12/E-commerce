@@ -1,38 +1,34 @@
-import { StatusBar } from "expo-status-bar";
 import {
   StyleSheet,
   Text,
   View,
   ImageBackground,
+  Pressable,
   navigation,
   Button,
   TouchableOpacity,
 } from "react-native";
 import Styled from "styled-components/native";
-import Login from "./Login";
-import { createStackNavigator } from "@react-navigation/stack";
-const StackNavigator = createStackNavigator();
 
-export default function FirstPage({ navigation }) {
+const FirstPage = ({ navigation }) => {
   return (
     <ViewStyle>
       <ImageBackground
         style={{ width: "100%", height: "100%" }}
         source={require("../assets/pic3.jpg")}
       >
-        <Title>New Fashion</Title>
-        <TouchableOpacity
-          style={{
-            alignItems: "center",
-            resizeMode: "stretch",
-          }}
-        >
-          <ButtonGo> Explore </ButtonGo>
-        </TouchableOpacity>
+        <ViewStyle1>
+          <Title>New Fashion</Title>
+          <TouchableOpacity style={{ marginTop: 20, marginLeft: 55 }}>
+            <Pressable onPress={() => navigation.navigate("Login")}>
+              <ButtonGo> Explore </ButtonGo>
+            </Pressable>
+          </TouchableOpacity>
+        </ViewStyle1>
       </ImageBackground>
     </ViewStyle>
   );
-}
+};
 const ViewStyle = Styled.View`
 flex:1;
 align-items:stretch;
@@ -55,7 +51,12 @@ const Title = Styled.Text`
 color: #FFFFFF;
 font-size:35px;
 font-weight:bold;
-padding:35px;
-margin-top:550px;
+margin-top:450px;
 
 `;
+
+const ViewStyle1 = Styled.View`
+padding:25px;
+`;
+
+export default FirstPage;
