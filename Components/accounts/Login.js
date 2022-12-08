@@ -163,7 +163,7 @@ const Login = ({ navigation }) => {
           </Rel>
           <Rel>
             <TouchableOpacity>
-              <Pressable onPress={() => navigation.navigate("Home Screen")}>
+              <Pressable onPress={() => navigation.navigate("Star Bird")}>
                 <ButtonGo>Continue</ButtonGo>
               </Pressable>
             </TouchableOpacity>

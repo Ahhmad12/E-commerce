@@ -9,6 +9,7 @@ import FirstPage from "./Components/accounts/FirstPage";
 import Login from "./Components/accounts/Login";
 import Registration from "./Components/accounts/Registration";
 import HomeScreen from "./Components/Screens/HomeScreen";
+import MainContainer from "./Components/MainContainer";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Registration" component={Registration} />
         <Stack.Screen name="Home Screen" component={HomeScreen} />
+        <Stack.Screen name="Star Bird" component={MainContainer} />
       </Stack.Navigator>
     </NavigationContainer>
   );
