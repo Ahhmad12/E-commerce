@@ -6,9 +6,9 @@ export default function DetailScreen({ navigation }) {
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Text
         onPress={() => navigation.navigate("Home")}
-        style={{ fontSize: 24, fontWeight: "bold" }}
+        style={{ fontSize: 24, fontWeight: "bo ld" }}
       >
-        Setting Screen
+        Detail Screen
       </Text>
     </View>
   );
