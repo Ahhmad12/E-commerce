@@ -10,7 +10,7 @@ import SettingScreen from "./Screens/SettingScreen";
 
 const homeName = "Home";
 const detailName = "Detail";
-const settingName = "Setting";
+const settingName = "Account";
 
 const Tab = createBottomTabNavigator();
 
@@ -28,7 +28,7 @@ export default function App() {
             } else if (rn === detailName) {
               iconName = focused ? "list" : "list-outline";
             } else if (rn === settingName) {
-              iconName = focused ? "setting" : "setting-outline";
+              iconName = focused ? "ios-person" : "ios-person-outline";
             }
             return <Ionicons name={iconName} size={size} color={color} />;
           },

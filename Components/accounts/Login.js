@@ -146,6 +146,7 @@ const Login = ({ navigation }) => {
             </Pressable>
             <InputRel>
               <OutlinedTextField
+                secureTextEntry={true}
                 label="Password"
                 baseColor="#000000"
                 textColor="#000000"
