@@ -6,6 +6,7 @@ import {
   Pressable,
   TouchableOpacity,
   Button,
+  Alert,
 } from "react-native";
 import Styled from "styled-components/native";
 
@@ -14,52 +15,43 @@ export default function SettingScreen({ navigation }) {
     <View
       style={{
         flex: 1,
-        marginTop: 30,
         justifyContent: "flex-start",
         alignItems: "center",
       }}
     >
       <Image
-        style={{ width: 80, height: 80, borderRadius: 200 / 2 }}
+        style={{ width: 90, marginTop: 20, height: 90, borderRadius: 200 / 2 }}
         source={require("../../assets/ahmad2.jpeg")}
       />
-      <Text style={{ fontSize: 20, fontWeight: "bold", marginTop: 10 }}>
-        Edit Profile
-      </Text>
+      <Text style={{ fontSize: 20, marginTop: 10 }}>Edit Profile</Text>
       <Container>
         <View style={{ flexDirection: "row", marginTop: 30 }}>
-          <Text style={{ padding: 10, fontSize: 18, fontWeight: "bold" }}>
-            Ahmad Naeem
-          </Text>
+          <Text style={{ padding: 10, fontSize: 18 }}>Ahmad Naeem</Text>
           <ImageLogo
-            style={{ marginLeft: 150, marginTop: 10 }}
+            style={{ marginLeft: 152, marginTop: 10 }}
             source={require("../../assets/edit.png")}
           />
         </View>
         <View style={{ flexDirection: "row", marginTop: 20 }}>
-          <Text style={{ padding: 10, fontSize: 18, fontWeight: "bold" }}>
-            Muhammad Naeem
-          </Text>
+          <Text style={{ padding: 10, fontSize: 18 }}>Muhammad Naeem</Text>
           <ImageLogo
-            style={{ marginLeft: 115, marginTop: 10 }}
+            style={{ marginLeft: 117, marginTop: 10 }}
             source={require("../../assets/edit.png")}
           />
         </View>
         <View style={{ flexDirection: "row", marginTop: 20 }}>
-          <Text style={{ padding: 10, fontSize: 18, fontWeight: "bold" }}>
+          <Text style={{ padding: 10, fontSize: 18 }}>
             ahmadnaeem26831@gmail.com
           </Text>
           <ImageLogo
-            style={{ marginLeft: 20, marginTop: 10 }}
+            style={{ marginLeft: 27, marginTop: 10 }}
             source={require("../../assets/edit.png")}
           />
         </View>
         <View style={{ flexDirection: "row", marginTop: 20 }}>
-          <Text style={{ padding: 10, fontSize: 18, fontWeight: "bold" }}>
-            ahmad12*
-          </Text>
+          <Text style={{ padding: 10, fontSize: 18 }}>ahmad12*</Text>
           <ImageLogo
-            style={{ marginLeft: 178, marginTop: 10 }}
+            style={{ marginLeft: 180, marginTop: 10 }}
             source={require("../../assets/edit.png")}
           />
         </View>
@@ -67,7 +59,7 @@ export default function SettingScreen({ navigation }) {
       <View style={{ flexDirection: "row", marginTop: 20 }}>
         <Rel>
           <TouchableOpacity>
-            <Pressable onPress={() => navigation.navigate("Home")}>
+            <Pressable onPress={() => Alert.alert("Alert", "Profile Updated")}>
               <ButtonGo>Save Profile</ButtonGo>
             </Pressable>
           </TouchableOpacity>
@@ -91,14 +83,15 @@ const ButtonGo = Styled.Text`
   padding-bottom: 10px;
   font-weight: bold;
   border-radius: 5px;
-  width: 285px;
+  width: 250px;
 `;
 
 const Container = Styled.View`
-margin-top:30px;
-height:300px;
+margin-top:20px;
+height:280px;
 width:320px;
-background-color:#FFFFFF;
+background-color: "#FFFFFF";
+border-radius:20px;
 `;
 
 const ImageLogo = Styled.Image`

@@ -19,7 +19,7 @@ const FirstPage = ({ navigation }) => {
       >
         <ViewStyle1>
           <Title>New Fashion</Title>
-          <TouchableOpacity style={{ marginTop: 20, marginLeft: 55 }}>
+          <TouchableOpacity style={{ marginTop: 50, marginLeft: 55 }}>
             <Pressable onPress={() => navigation.navigate("Login")}>
               <ButtonGo> Explore </ButtonGo>
             </Pressable>
@@ -37,14 +37,13 @@ align-items:stretch;
 const ButtonGo = Styled.Text`
    background-color: #FFFFFF;
    text-align: center;
-   margin-top:-5px;
+   margin-top:5px;
    color: #000000;
    font-size: 25px;
    padding-bottom: 10px;
    width:200px;
    border-radius: 50px;
    font-family: sans-serif-thin;
-   font-weight:bold;
  `;
 
 const Title = Styled.Text`
